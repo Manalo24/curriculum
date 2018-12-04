@@ -15,5 +15,14 @@ public class EsperienzaLavorativa extends voci {
 		this.partecipCorso = partecipCorso;
 		this.tipoCorso = tipoCorso;
 	}
+	@Override
+	public String toString() {
+		return "EsperienzaLavorativa [azienda=" + azienda + ", guadagno=" + guadagno + ", partecipCorso="
+				+ partecipCorso + ", tipoCorso=" + tipoCorso + ", id=" + id + ", dataIniizio=" + dataIniizio
+				+ ", dataFine=" + dataFine + ", descrizione=" + descrizione + "]";
+	}
+	
+	
+	
 	
 }

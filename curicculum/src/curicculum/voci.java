@@ -2,10 +2,11 @@
 package curicculum;
 import java.time.LocalDate;
 public class voci {
-	private long id;
-	private LocalDate dataIniizio;
-	private LocalDate dataFine;
-	private String descrizione;
+	long id;
+	 LocalDate dataIniizio;
+	
+	 LocalDate dataFine;
+	String descrizione;
 	public voci(long id, LocalDate dataIniizio, LocalDate dataFine, String descrizione) {
 		this.id = id;
 		this.dataIniizio = dataIniizio;
@@ -36,6 +37,8 @@ public class voci {
 	public String getDescrizione() {
 		return descrizione;
 	}
-	
+	public String toString() {
+		return " ";
+	}
 	
 }

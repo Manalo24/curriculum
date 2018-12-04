@@ -14,4 +14,13 @@ public class StudioEffetuato extends voci{
 		this.anniStudio = anniStudio;
 		this.diploma = diploma;
 	}
-}
+	@Override
+	public String toString() {
+		return "StudioEffetuato [nomeIst=" + nomeIst + ", anniStudio=" + anniStudio + ", diploma=" + diploma + ", id="
+				+ id + ", dataIniizio=" + dataIniizio + ", dataFine=" + dataFine + ", descrizione=" + descrizione + "]";
+	}
+	
+	
+	
+	}
+
