@@ -30,9 +30,8 @@ public class principale {
 		while(finale==0) {
 		System.out.println("0)Exit");
 		System.out.println("1)Inserimento voce");
-		System.out.println("2)Elenco");
-		System.out.println("3)Posti");
-		System.out.println("4)Togliere");
+		System.out.println("2)togli voce");
+		System.out.println("3)Visualizza CV");
 		pick=input.nextInt();
 		switch(pick) {
 		case 0: finale=1;
@@ -83,7 +82,7 @@ public class principale {
 				System.out.println("Inserisci Tipo corso");
 				tipoCorso=input.next();
 				EsperienzaLavorativa obj=new EsperienzaLavorativa(id, dataInizio, dataFine, descrizione, azienda, guadagno, partecip, tipoCorso);
-				cvObj.aggiungiVoce(obj);
+				cvObj.aggiungiVoceL(obj);
 			} if (scelta==2) {
 				System.out.println("Inserisci ID");
 				id=input.nextLong();
@@ -132,20 +131,20 @@ public class principale {
 					partecip=false;
 				}
 				StudioEffetuato studObj = new StudioEffetuato(id, dataInizio, dataFine, descrizione, nomeIst, anniStudio, partecip);
-				
+				cvObj.aggiungiVoceS(studObj);
 			}
 			
 				break;
 		case 2: 
 			
-			
+			cvObj.rimuovi();
 				break;
 		case 3: 
 			
-			
+			cvObj.stampa();
 				break;
 		case 4: 
-			
+			 cvObj.elenco();
 			
 				break;
 		
