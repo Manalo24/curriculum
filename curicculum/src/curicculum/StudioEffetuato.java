@@ -3,7 +3,7 @@ package curicculum;
 import java.time.LocalDate;
 
 public class StudioEffetuato extends voci{
-	
+
 	private String nomeIst;
 	private int anniStudio;
 	private boolean diploma;
@@ -19,8 +19,8 @@ public class StudioEffetuato extends voci{
 		return "StudioEffetuato [nomeIst=" + nomeIst + ", anniStudio=" + anniStudio + ", diploma=" + diploma + ", id="
 				+ id + ", dataIniizio=" + dataIniizio + ", dataFine=" + dataFine + ", descrizione=" + descrizione + "]";
 	}
-	
-	
-	
-	}
+
+
+
+}
 

@@ -21,8 +21,8 @@ public class EsperienzaLavorativa extends voci {
 				+ partecipCorso + ", tipoCorso=" + tipoCorso + ", id=" + id + ", dataIniizio=" + dataIniizio
 				+ ", dataFine=" + dataFine + ", descrizione=" + descrizione + "]";
 	}
-	
-	
-	
-	
+
+
+
+
 }
